@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amora Frame &mdash; Destination Wedding Photographers &amp; Filmmakers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links nav-links--left">
+      <a href="#studio">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Details</a>
+    </nav>
+
+    <a href="#hero" class="nav-mark">
+      <span class="nav-mark__ring">
+        <!-- EDIT: replace "AF" and "Amora Frame" with your studio's initials / name -->
+        <span class="nav-mark__initials">AF</span>
+      </span>
+    </a>
+
+    <nav class="nav-links nav-links--right">
+      <a href="#films">Films</a>
+      <a href="#journal">Journal</a>
+      <a href="#contact" class="nav-cta">Enquire</a>
+    </nav>
+  </div>
+
+  <!-- mobile drawer -->
+  <div class="nav-drawer" id="navDrawer">
+    <a href="#studio">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Details</a>
+    <a href="#films">Films</a>
+    <a href="#journal">Journal</a>
+    <a href="#contact">Enquire</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-media">
+    <video
+      id="heroVideo"
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="images/image2.jpg">
+      <!-- PASTE VIDEO HERE: save your file as video1.mp4 inside the /images folder -->
+      <source src="images/video1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-scrim"></div>
+    <div class="hero-grain"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal" data-reveal>Destination Wedding Photographers &amp; Filmmakers</p>
+    <h1 class="hero-title reveal" data-reveal>
+      <span class="hero-title__line">Every vow,</span>
+      <span class="hero-title__line hero-title__line--em">unrepeated.</span>
+    </h1>
+    <p class="hero-sub reveal" data-reveal>Est. 2016 &nbsp;&mdash;&nbsp; Photography &amp; Film for the beautifully unscripted</p>
+    <a href="#portfolio" class="hero-cta reveal" data-reveal>
+      <span>View the Portfolio</span>
+    </a>
+  </div>
+
+  <button class="sound-toggle" id="soundToggle" aria-label="Turn on video sound" aria-pressed="false">
+    <svg class="icon-speaker icon-speaker--off" viewBox="0 0 24 24" fill="none">
+      <path d="M4 9v6h4l5 5V4L8 9H4z" fill="currentColor"/>
+      <path d="M16 8.5c1 1 1.6 2.2 1.6 3.5s-.6 2.5-1.6 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+      <line x1="18.5" y1="5" x2="5" y2="19" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </svg>
+    <svg class="icon-speaker icon-speaker--on" viewBox="0 0 24 24" fill="none">
+      <path d="M4 9v6h4l5 5V4L8 9H4z" fill="currentColor"/>
+      <path d="M16 8.5c1 1 1.6 2.2 1.6 3.5s-.6 2.5-1.6 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M18.5 6c1.8 1.7 2.8 3.7 2.8 6s-1 4.3-2.8 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </svg>
+    <span class="sound-toggle__label">Sound</span>
+  </button>
+
+  <div class="hero-scroll">
+    <span></span>
+    <em>Scroll</em>
+  </div>
+</section>
+
+<!-- ============ ROLLING FILMSTRIP ============ -->
+<section class="filmstrip" aria-label="Selected moments">
+  <div class="filmstrip-head">
+    <span class="filmstrip-eyebrow">Real Emotions &amp; Intimate Moments</span>
+  </div>
+  <div class="filmstrip-track">
+    <div class="filmstrip-row" id="filmstripRow">
+      <!-- track A -->
+      <figure class="frame"><img src="images/image2.jpg" alt="Bride and groom beneath a chandelier"></figure>
+      <figure class="frame frame--tall"><img src="images/image1.jpg" alt="Bride and groom exchanging garlands"></figure>
+      <figure class="frame"><img src="images/image3.jpg" alt="Couple silhouetted at dusk"></figure>
+      <figure class="frame frame--tall"><img src="images/image4.jpg" alt="Bride looking up at groom"></figure>
+      <figure class="frame"><img src="images/image1.jpg" alt="Bride in gold jewellery smiling"></figure>
+      <figure class="frame frame--tall"><img src="images/image2.jpg" alt="Portrait beneath ornate chandelier"></figure>
+      <figure class="frame"><img src="images/image4.jpg" alt="Couple embracing outdoors"></figure>
+      <figure class="frame frame--tall"><img src="images/image3.jpg" alt="Silhouette kiss against sunset sky"></figure>
+      <!-- duplicate for seamless loop -->
+      <figure class="frame" aria-hidden="true"><img src="images/image2.jpg" alt=""></figure>
+      <figure class="frame frame--tall" aria-hidden="true"><img src="images/image1.jpg" alt=""></figure>
+      <figure class="frame" aria-hidden="true"><img src="images/image3.jpg" alt=""></figure>
+      <figure class="frame frame--tall" aria-hidden="true"><img src="images/image4.jpg" alt=""></figure>
+      <figure class="frame" aria-hidden="true"><img src="images/image1.jpg" alt=""></figure>
+      <figure class="frame frame--tall" aria-hidden="true"><img src="images/image2.jpg" alt=""></figure>
+      <figure class="frame" aria-hidden="true"><img src="images/image4.jpg" alt=""></figure>
+      <figure class="frame frame--tall" aria-hidden="true"><img src="images/image3.jpg" alt=""></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / STUDIO ============ -->
+<section class="studio" id="studio">
+  <div class="studio-inner">
+    <div class="studio-image">
+      <img src="images/image4.jpg" alt="Bride and groom sharing a quiet moment">
+      <span class="studio-image__caption">Jaipur &middot; Udaipur &middot; Goa &middot; &amp; beyond</span>
+    </div>
+    <div class="studio-copy">
+      <span class="eyebrow">The Studio</span>
+      <h2>We travel light,<br><em>so your story stays heavy&nbsp;with feeling.</em></h2>
+      <p>We are a small collective of photographers and filmmakers who follow weddings across coastlines, palaces, and back gardens. No two ceremonies are staged the same way twice &mdash; we simply stay close, stay quiet, and keep the shutter ready for the moment before anyone says "smile."</p>
+      <p>Every film and frame is edited by the same two hands that shot it, so what you receive is a single point of view from first look to last dance.</p>
+      <a href="#contact" class="text-link">Start a conversation &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="services-head">
+    <span class="eyebrow eyebrow--center">What We Offer</span>
+    <h2>Two crafts, one story</h2>
+  </div>
+  <div class="services-grid">
+    <article class="service-card">
+      <div class="service-card__img"><img src="images/image1.jpg" alt="Wedding photography sample"></div>
+      <span class="service-card__num">01</span>
+      <h3>Photography</h3>
+      <p>Documentary coverage across every ceremony, layered with directed portraits at golden hour.</p>
+    </article>
+    <article class="service-card service-card--elevated">
+      <div class="service-card__img"><img src="images/image3.jpg" alt="Wedding film still"></div>
+      <span class="service-card__num">02</span>
+      <h3>Wedding Films</h3>
+      <p>Cinematic edits scored to sound, built to feel like memory rather than highlight reel.</p>
+    </article>
+    <article class="service-card">
+      <div class="service-card__img"><img src="images/image2.jpg" alt="Destination wedding coverage"></div>
+      <span class="service-card__num">03</span>
+      <h3>Destination Weddings</h3>
+      <p>Full-team travel to your chosen city or shoreline &mdash; logistics handled quietly, in advance.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ FEATURED WEDDING (split) ============ -->
+<section class="feature" id="portfolio">
+  <div class="feature-row">
+    <div class="feature-copy">
+      <span class="eyebrow">Featured</span>
+      <h2>A Palace Wedding <em>in Red &amp; Gold</em></h2>
+      <p>Beneath crystal chandeliers and portraits older than the building itself, two families became one across three days of ceremony. This is one of our favourite chapters &mdash; quiet mornings, loud celebrations, and a bride who never once stopped laughing.</p>
+      <a href="#journal" class="text-link">Read the full story &rarr;</a>
+    </div>
+    <div class="feature-media">
+      <img class="feature-media__main" src="images/image2.jpg" alt="Bride and groom beneath chandelier">
+      <img class="feature-media__accent" src="images/image1.jpg" alt="Bride portrait detail">
+    </div>
+  </div>
+
+  <div class="feature-row feature-row--reverse">
+    <div class="feature-copy">
+      <span class="eyebrow">Featured</span>
+      <h2>Golden Hour <em>on the Coast</em></h2>
+      <p>Some weddings ask for grandeur; this one asked for a horizon. We chased the last light between two trees until the sky turned the exact colour of the bride's dupatta.</p>
+      <a href="#journal" class="text-link">Read the full story &rarr;</a>
+    </div>
+    <div class="feature-media">
+      <img class="feature-media__main" src="images/image3.jpg" alt="Couple silhouetted at sunset">
+      <img class="feature-media__accent" src="images/image4.jpg" alt="Bride looking up at groom">
+    </div>
+  </div>
+</section>
+
+<!-- ============ FILMS ============ -->
+<section class="films" id="films">
+  <div class="films-media">
+    <video
+      class="films-video"
+      muted
+      loop
+      playsinline
+      poster="images/image1.jpg"
+      id="filmsVideo">
+      <!-- Same file as the hero, or swap in a highlight reel: video1.mp4 -->
+      <source src="images/video1.mp4" type="video/mp4">
+    </video>
+    <button class="films-play" id="filmsPlay" aria-label="Play film with sound">
+      <span class="films-play__ring"></span>
+      <svg viewBox="0 0 24 24" fill="none"><path d="M9 7v10l8-5-8-5z" fill="currentColor"/></svg>
+    </button>
+  </div>
+  <div class="films-copy">
+    <span class="eyebrow">Motion</span>
+    <h2>Watch the day<br><em>move again.</em></h2>
+    <p>A wedding film is the closest thing to time travel we know how to offer. Press play, turn the sound up, and let the room get loud again.</p>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL ============ -->
+<section class="testimonial">
+  <span class="testimonial-mark">&ldquo;</span>
+  <p class="testimonial-quote">They disappeared into the background and somehow captured every single feeling we didn't know we were having. Watching the film back felt like living the day twice.</p>
+  <span class="testimonial-name">&mdash; A Bride, Udaipur</span>
+</section>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<footer class="site-footer" id="contact">
+  <div class="footer-top">
+    <span class="eyebrow eyebrow--center">Let's Talk</span>
+    <h2>Tell us your date,<br><em>we'll bring the rest.</em></h2>
+    <a href="mailto:hello@yourstudio.com" class="footer-email">hello@yourstudio.com</a>
+    <a href="#contact" class="hero-cta footer-cta"><span>Enquire About Your Date</span></a>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-mark">
+      <span class="nav-mark__ring nav-mark__ring--footer">
+        <span class="nav-mark__initials">AF</span>
+      </span>
+      <p>Amora Frame Photography</p>
+    </div>
+    <nav class="footer-links">
+      <a href="#studio">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Details</a>
+      <a href="#films">Films</a>
+      <a href="#contact">Enquire</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="Pinterest">Pinterest</a>
+      <a href="#" aria-label="Facebook">Facebook</a>
+    </div>
+  </div>
+  <p class="footer-fine">&copy; <span id="year"></span> Amora Frame Photography &mdash; All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
